@@ -101,9 +101,56 @@ void SetMotorVoltage(uint8_t Fraction = 0x89)
 
 Use two 4.7K pull-up resistors with 5V for both SDA and SCL.
 
+## Demonstration
+
+### LRA
+
+We measure the force curves of NFP-ELV0832B [4].
+
+### Load Cell
+We used ZTS-20N to record the force of the LRA.
+ZTS-20N features high sampling rate of 2000 Hz for accurate measurement, and the minimum unit of measurement is 0.01N.
+
+### Configuration
+Five frequencies: **1Hz, 2Hz, 10Hz, 20Hz, and 50Hz**
+
+```
+SetFreq(1);		//1Hz
+SetFreq(2);		//2Hz
+SetFreq(10);	//10Hz
+SetFreq(20);	//20Hz
+SetFreq(50);	//50Hz
+```
+
+Two magnitude: **20% and 100%**
+
+```
+SetMotorVoltage(50);  //20%
+SetMotorVoltage(255); //100%
+```
+
+### Force Curves
+
+**Note that the scales of the vertical axis might be different**
+
+**You can see the raw data from [here](raw_force_curve).**
+
+![1Hz 20%](figures/force_curve/1Hz50.png)
+![1Hz 100%](figures/force_curve/1Hz255.png)
+![2Hz 20%](figures/force_curve/2Hz50.png)
+![2Hz 100%](figures/force_curve/2Hz255.png)
+![10Hz 20%](figures/force_curve/10Hz50.png)
+![10Hz 100%](figures/force_curve/10Hz255.png)
+![20Hz 20%](figures/force_curve/20Hz50.png)
+![20Hz 100%](figures/force_curve/20Hz255.png)
+![50Hz 20%](figures/force_curve/50Hz50.png)
+![50Hz 100%](figures/force_curve/50Hz255.png)
+
 ## Reference
 [1] Adafruit_DRV2605_Library: https://github.com/adafruit/Adafruit_DRV2605_Library
 
 [2] Datasheet : https://www.ti.com/lit/ds/symlink/drv2605.pdf
 
 [3] How to use PWM on ESP32 : https://randomnerdtutorials.com/esp32-pwm-arduino-ide/
+
+[4] LRA Motors : https://www.nfpmotor.com/products-linear-resonant-actuators-lras.html
