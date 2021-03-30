@@ -52,7 +52,7 @@ Code:
   drv.writeRegister8(DRV2605_REG_CONTROL3, drv.readRegister8(DRV2605_REG_CONTROL3) | 0x01);
 ```
 
-### Control the frequency of LRAs
+### Control the frequencies of LRAs
 
 From the datasheet[2], we can see how to change the resonance frequencies of LRAs on Page 14.
 
@@ -63,6 +63,8 @@ The driving frequency is the PWM frequency divided by 128.
 Thus, a 128Hz PWM signal means the LRA will be vibrated at 1Hz.
 
 To modulate the frequencies of PWM signals on ESP32, please refer to the tutorial for ESP32[3].
+
+(The frequency here is equal to alternating current (AC) frequency. Setting 1Hz implies two impulses per second, one positive and one negative force.)
 
 Code:
 ```
@@ -115,14 +117,14 @@ ZTS-20N features high sampling rate of 2000 Hz for accurate measurement, and the
 Five frequencies: **1Hz, 2Hz, 10Hz, 20Hz, and 50Hz**
 
 ```
-SetFreq(1);		//1Hz
-SetFreq(2);		//2Hz
+SetFreq(1);	//1Hz
+SetFreq(2);	//2Hz
 SetFreq(10);	//10Hz
 SetFreq(20);	//20Hz
 SetFreq(50);	//50Hz
 ```
 
-Two magnitude: **20% and 100%**
+Two magnitude: **20%(1V) and 100%(5V)**
 
 ```
 SetMotorVoltage(50);  //20%
