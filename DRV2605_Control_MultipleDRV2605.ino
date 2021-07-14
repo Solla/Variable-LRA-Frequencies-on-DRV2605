@@ -34,7 +34,9 @@ void setup()
   Wire.begin();
   for (int i = 0; i < MotorCount; ++i)
   {
-    Serial.printf("ID %2d = %d\n", i, SCL_Pins[i]);
+    int SDA_ID = ID / 4;
+    int SCL_ID = ID % 4;
+    Serial.printf("Initializing Motor ID %2d: SCL Group: %d(pin %2d) SDA Group: %d(pin %2d)\n", i, SCL_ID, SCL_Pins[SCL_ID], SDA_ID, SDA_Pins[SDA_ID]);
     SwitchMotor(i);
     /*Setup DRV2605*/
     drv.begin();
