@@ -148,6 +148,10 @@ SetMotorVoltage(255); //100%
 ![50Hz 20%](figures/force_curve/50Hz50.png)
 ![50Hz 100%](figures/force_curve/50Hz255.png)
 
+## Multiple DRV2605 in One ESP32 board
+You can refer the code: [DRV2605_Control_MultipleDRV2605.ino](DRV2605_Control_MultipleDRV2605.ino) and the following figure.
+![Electronic Schematic](figures/Schematic.png)
+
 ## Reference
 [1] Adafruit_DRV2605_Library: https://github.com/adafruit/Adafruit_DRV2605_Library
 
