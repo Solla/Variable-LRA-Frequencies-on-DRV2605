@@ -152,6 +152,12 @@ SetMotorVoltage(255); //100%
 You can refer the code: [DRV2605_Control_MultipleDRV2605.ino](DRV2605_Control_MultipleDRV2605.ino) and the following figure.
 ![Electronic Schematic](figures/Schematic.png)
 
+I also provided the PCB files. However, the PCB has not been validated yet, so I cannot assure it works or not.
+
+![PCB Top View](figures/PCB_Top.svg)
+
+![PCB Bottom View](figures/PCB_Bottom.svg)
+
 ## Reference
 [1] Adafruit_DRV2605_Library: https://github.com/adafruit/Adafruit_DRV2605_Library
 
