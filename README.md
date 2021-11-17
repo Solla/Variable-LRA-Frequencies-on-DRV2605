@@ -9,7 +9,7 @@ However, the vibrotactile feedback feels like continuous feedback if the driving
 
 ## License
 
-**MIT license**
+**MIT License**
 
 You have to include the GitHub repository in any redistribution.
 
@@ -152,7 +152,7 @@ SetMotorVoltage(255); //100%
 You can refer the code: [DRV2605_Control_MultipleDRV2605.ino](DRV2605_Control_MultipleDRV2605.ino) and the following figure.
 ![Electronic Schematic](figures/Schematic.png)
 
-I also provided the PCB files. However, the PCB has not been validated yet, so I cannot assure it works or not.
+I also provided the PCB files. The PCB design has been validated. Many thanks to Prof. Mike Chen from NTU HCI Lab.
 
 ![PCB Top View](figures/PCB_Top.svg)
 

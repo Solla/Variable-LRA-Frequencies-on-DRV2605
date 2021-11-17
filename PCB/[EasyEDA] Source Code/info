@@ -1,10 +1,10 @@
 {
   "uuid": "d2b7b47e09794ae14ff34a4cda1d1429",
-  "path": "Offline/DRV2605_Vibration",
-  "name": "DRV2605_Vibration",
+  "path": "Offline/%5BEasyEDA%5D%20Source%20Code",
+  "name": "[EasyEDA] Source Code",
   "content": "",
   "created_at": "2021-06-21 00:14:42",
-  "updated_at": "2021-07-17 02:08:37",
+  "updated_at": "2021-11-07 13:45:31",
   "stick": "",
   "documents": [
     {
@@ -20,7 +20,8 @@
         "c64a96b53ae74d938596c0b660d7b418": 6,
         "b1d30d497d224ba09bec7e2c6ad65229": 1,
         "a09a115c631445698765195d714e2d73": 24,
-        "c6551ffd8df4e1d9edf79a5278696201": 24
+        "c6551ffd8df4e1d9edf79a5278696201": 24,
+        "c2606d8812424bf3b241ab9fdefd3143": 2
       },
       "BOM": [
         [
@@ -31,46 +32,18 @@
           "CustomPara"
         ],
         [
-          "1K",
-          10,
-          "R0402",
-          "R6,R1,R3,R4,R5,R2,R7,R8,R9,R10",
-          {
-            "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "UniOhm",
-            "BOM_Manufacturer Part": "0402WGF1001TCE",
-            "BOM_Supplier Part": "C11702",
-            "BOM_JLCPCB Part Class": "Basic Part",
-            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
-            "uuid": "0162c93b05c079a4f063ffb73f50c063"
-          }
-        ],
-        [
-          "Ai-Thinker_NodeMCU-32SLUA",
-          1,
-          "AI-THINKER_NODEMCU-32SLUA",
-          "NODEMCU-32S",
-          {
-            "BOM_Supplier": "LCSC",
-            "BOM_Supplier Part": "C111436",
-            "BOM_Manufacturer": "Ai-Thinker",
-            "BOM_Manufacturer Part": "NodeMCU-32SLua",
-            "puuid": "6c5adcceab754c0280852419beb5d16f",
-            "uuid": "388c05e900d94aab9df06aa22690c07c"
-          }
-        ],
-        [
-          "DRV2605LDGSR",
+          "1uF",
           24,
-          "VSSOP-10_L3.0-W3.0-P0.50-LS4.9-BL",
-          "U23,U22,U21,U20,U19,U18,U17,U5,U16,U15,U1,U14,U2,U13,U3,U12,U4,U11,U6,U10,U7,U9,U24,U8",
+          "C0402",
+          "C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Supplier Part": "C527464",
-            "BOM_Manufacturer": "Texas Instruments",
-            "BOM_Manufacturer Part": "DRV2605LDGSR",
-            "puuid": "b77416f886f74a91a0b9ce8513b8c211",
-            "uuid": "a09a115c631445698765195d714e2d73"
+            "BOM_Manufacturer": "SAMSUNG",
+            "BOM_Manufacturer Part": "CL05A105KA5NQNC",
+            "BOM_Supplier Part": "C52923",
+            "BOM_JLCPCB Part Class": "Basic Part",
+            "puuid": "0821ed6ea50c44f4909e4be7610e4198",
+            "uuid": "c6551ffd8df4e1d9edf79a5278696201"
           }
         ],
         [
@@ -92,7 +65,7 @@
           "XH-8A",
           6,
           "CONN-TH_8P-P2.50_XH-8A",
-          "CN6,CN5,CN4,CN3,CN2,CN1",
+          "CN1,CN2,CN3,CN4,CN5,CN6",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Manufacturer": "BOOMELE",
@@ -104,26 +77,69 @@
           }
         ],
         [
-          "1uF",
-          24,
-          "C0402",
-          "C13,C3,C14,C2,C15,C7,C16,C1,C8,C9,C18,C10,C19,C6,C20,C11,C21,C5,C22,C12,C23,C4,C24,C17",
+          "2.54-1*19P母",
+          2,
+          "HDR-TH_19P-P2.54-V-F",
+          "LEFT,RIGHT",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "SAMSUNG",
-            "BOM_Manufacturer Part": "CL05A105KA5NQNC",
-            "BOM_Supplier Part": "C52923",
+            "BOM_Supplier Part": "C319202",
+            "BOM_Manufacturer": "BOOMELE(博穆精密)",
+            "BOM_Manufacturer Part": "2.54-1*19P母",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "238f7130b74e4d8cbbd8e4480294e0f1",
+            "uuid": "c2606d8812424bf3b241ab9fdefd3143"
+          }
+        ],
+        [
+          "Ai-Thinker_NodeMCU-32SLUA",
+          1,
+          "AI-THINKER_NODEMCU-32SLUA",
+          "NODEMCU-32S",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C111436",
+            "BOM_Manufacturer": "Ai-Thinker",
+            "BOM_Manufacturer Part": "NodeMCU-32SLua",
+            "puuid": "6c5adcceab754c0280852419beb5d16f",
+            "uuid": "388c05e900d94aab9df06aa22690c07c"
+          }
+        ],
+        [
+          "1K",
+          10,
+          "R0402",
+          "R1,R2,R3,R4,R5,R6,R7,R8,R9,R10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0402WGF1001TCE",
+            "BOM_Supplier Part": "C11702",
             "BOM_JLCPCB Part Class": "Basic Part",
-            "puuid": "0821ed6ea50c44f4909e4be7610e4198",
-            "uuid": "c6551ffd8df4e1d9edf79a5278696201"
+            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
+            "uuid": "0162c93b05c079a4f063ffb73f50c063"
+          }
+        ],
+        [
+          "DRV2605LDGSR",
+          24,
+          "VSSOP-10_L3.0-W3.0-P0.50-LS4.9-BL",
+          "U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11,U12,U13,U14,U15,U16,U17,U18,U19,U20,U21,U22,U23,U24",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C527464",
+            "BOM_Manufacturer": "Texas Instruments",
+            "BOM_Manufacturer Part": "DRV2605LDGSR",
+            "puuid": "b77416f886f74a91a0b9ce8513b8c211",
+            "uuid": "a09a115c631445698765195d714e2d73"
           }
         ]
       ],
-      "updateTime": 1626456768,
+      "updateTime": 1636263000,
       "createTime": 1624205691,
       "histories": [],
       "created_at": "2021-06-21 00:14:51",
-      "updated_at": "2021-07-17 01:32:48"
+      "updated_at": "2021-11-07 13:30:00"
     },
     {
       "uuid": "6f603dcf8c2f2c5b86d255aeadc12b85",
@@ -135,24 +151,25 @@
       "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
+        "238f7130b74e4d8cbbd8e4480294e0f1": 2,
+        "f8151fdc728a41ebbc304e11d39e5437": 1,
+        "0821ed6ea50c44f4909e4be7610e4198": 24,
         "fafd024f554e426eb74cf4a204aa88b0": 10,
         "6c5adcceab754c0280852419beb5d16f": 1,
         "5e74b83f6a3c48f6ab5008c0b28fa5f6": 6,
-        "0821ed6ea50c44f4909e4be7610e4198": 24,
-        "f8151fdc728a41ebbc304e11d39e5437": 1,
         "b77416f886f74a91a0b9ce8513b8c211": 24
       },
       "BOM": [],
-      "updateTime": 1626458917,
+      "updateTime": 1636263931,
       "createTime": 1626192495,
       "histories": [],
       "created_at": "2021-07-14 00:08:15",
-      "updated_at": "2021-07-17 02:08:37"
+      "updated_at": "2021-11-07 13:45:31"
     }
   ],
   "sort": [],
-  "title": "DRV2605_Vibration",
-  "foldername": "DRV2605_Vibration",
+  "title": "[EasyEDA] Source Code",
+  "foldername": "[EasyEDA] Source Code",
   "schfilename": "DRV2605_Vibration.json",
-  "schfilemtime": 1626456768504
+  "schfilemtime": 1636263000188
 }

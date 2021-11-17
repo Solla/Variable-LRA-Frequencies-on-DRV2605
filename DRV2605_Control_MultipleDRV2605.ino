@@ -1,9 +1,9 @@
 #include <Wire.h>
 #include "Adafruit_DRV2605.h"
 
-const int Motor_PWM_Pins = 16;
+const int Motor_PWM_Pins = 14;
 const uint32_t Default_PWM_Frequency = 100;
-const int SDA_Pins[] = {00, 05, 09, 10, 17, 23};
+const int SDA_Pins[] = {16, 05, 32, 33, 17, 23};
 const int SCL_Pins[] = {18, 19, 21, 22};
 int SDA_Counts = sizeof(SDA_Pins) / sizeof(int);
 int SCL_Counts = sizeof(SCL_Pins) / sizeof(int);
